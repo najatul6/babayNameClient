@@ -1,4 +1,3 @@
-import AuthLayout from "@/Layout/AuthLayout";
 import DashboardLayout from "@/Layout/DashboardLayout";
 import RootLayout from "@/Layout/RootLayout";
 import LogIn from "@/pages/Common/Auth/LogIn";
@@ -56,19 +55,14 @@ const Router = createBrowserRouter([
       },
     ],
   },
+  
   {
-    path: "/auth",
-    element: <AuthLayout />,
-    children: [
-      {
-        path: "login",
-        element: <LogIn />,
-      },
-      {
-        path: "register",
-        element: <Register />,
-      },
-    ],
+    path: "/auth/login",
+    element: <LogIn />,
+  },
+  {
+    path: "/auth/register",
+    element: <Register />,
   },
   {
     path: "/un-auth",
