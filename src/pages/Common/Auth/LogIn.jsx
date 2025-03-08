@@ -1,46 +1,19 @@
 import useAuth from "@/hooks/useAuth";
 import useAxiosPublic from "@/hooks/useAxiosPublic";
-import { Mail } from "lucide-react";
 import { useState } from "react";
 import { Helmet } from "react-helmet-async";
-import { useForm } from "react-hook-form";
 import { useLocation, useNavigate } from "react-router-dom";
 import { toast } from "react-toastify";
 import bgImages from "../../../assets/Pregnant in love.jpeg";
 
 const LogIn = () => {
-  const [passShow, setPassShow] = useState(false);
-  const { signInUser, googleSignIn } = useAuth();
+  const {  googleSignIn } = useAuth();
   const [error, setError] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
   const form = location?.state?.from?.pathname || "/";
   const axiosPublic = useAxiosPublic();
-  const {
-    register,
-    handleSubmit,
-    formState: { errors },
-  } = useForm();
-
-  const onSubmit = (data) => {
-    toast.promise(
-      signInUser(data?.email, data?.password)
-        .then((user) => {
-          navigate(form, { replace: true });
-          console.log("User Signed In:", user);
-        })
-        .catch((error) => {
-          console.error("Error Signing In:", error);
-          setError(error.code);
-          throw error;
-        }),
-      {
-        pending: "Signing In...",
-        success: "User Signed In Successfully",
-        error: `${error}`,
-      }
-    );
-  };
+  
 
   const handleGoogleSignIn = () => {
     toast.promise(
@@ -72,19 +45,23 @@ const LogIn = () => {
     );
   };
   return (
-    <div style={{
-      backgroundImage: `url(${bgImages})`,
-      backgroundSize: "cover",
-      backgroundPosition: "center",
-      backgroundRepeat: "no-repeat",
-    }} className=" sm:px-6 px-4 py-8 w-full h-screen shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] mx-auto">
+    <div
+      style={{
+        backgroundImage: `url(${bgImages})`,
+        backgroundSize: "cover",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+      }}
+      className=" sm:px-6 px-4 py-8 w-full min-h-screen mx-auto flex justify-center items-center"
+    >
       <Helmet>
         <title>Log in</title>
         <link rel="najatul islam" href="https://www.najatulislam.me/" />
       </Helmet>
-      <div  className="rounded-xl sm:px-6 px-4 py-8 max-w-md lg:w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] bg-white/50 backdrop-blur-sm max-lg:mx-auto"> 
-      <p className="text-2xl font-bold dark:text-white">Create Account</p>
-      <p className="dark:text-gray-200">It will take less than 2 minutes</p>
+      <div className="rounded-xl sm:px-6 px-4 py-8 max-w-md lg:w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] bg-white/50 backdrop-blur-sm max-lg:mx-auto space-y-2">
+        <p className="text-2xl font-bold dark:text-white">Create Account</p>
+        
+        <p className="dark:text-gray-200">It will take less than 2 minutes</p>
         <button
           onClick={handleGoogleSignIn}
           type="button"
