@@ -176,9 +176,13 @@ const Header = () => {
             )}
 
             <ul
-              className={`absolute left-0 top-16 bg-white shadow-md w-full p-5 transition-all duration-300 ${
-                isMenuOpen ? "block" : "hidden"
-              }`}
+              className={`capitalize w-full py-5 flex animate__animated flex-col lg:hidden gap-5 absolute z-50 bg-white/40 backdrop-blur-md  min-h-screen top-20  left-0 ${
+                                  isMenuOpen
+                                    ? "animate__fadeInLeft "
+                                    : isPageLoad
+                                    ? "animate__fadeOutRight flex "
+                                    : "hidden"
+                                } `}
             >
               {menu.map((item, index) => (
                 <div key={index}>
@@ -196,7 +200,7 @@ const Header = () => {
                         />
                       </button>
                       <ul
-                        className={`pl-4 transition ${
+                        className={`animate__animated  pl-4 transition ${
                           submenuOpen[index] ? "block" : "hidden"
                         }`}
                       >
@@ -252,3 +256,127 @@ const Header = () => {
 };
 
 export default Header;
+
+
+
+
+
+  
+       
+
+//         <div className="lg:hidden flex items-center gap-1">
+//           <div className="lg:hidden rounded-md border p-1">
+//             {!isMenuOpen ? (
+//               <RiMenuAddLine
+//                 onClick={() => {
+//                   setIsMenuOpen(true);
+//                   setIsPageLoad(true);
+//                 }}
+//                 className="text-2xl cursor-pointer"
+//               ></RiMenuAddLine>
+//             ) : (
+//               <CgMenuMotion
+//                 onClick={() => setIsMenuOpen(false)}
+//                 className="text-2xl cursor-pointer"
+//               ></CgMenuMotion>
+//             )}
+
+//             {
+//               <ul
+//                 className={capitalize w-full py-5 flex animate__animated flex-col lg:hidden gap-5 absolute z-50 bg-white/40 backdrop-blur-md  min-h-screen top-20  left-0 ${
+//                   isMenuOpen
+//                     ? "animate__fadeInLeft "
+//                     : isPageLoad
+//                     ? "animate__fadeOutRight flex "
+//                     : "hidden"
+//                 } }
+//               >
+//                 {menu.map((item) => (
+//                   <NavLink
+//                     onClick={() => setIsMenuOpen(false)}
+//                     className={({ isActive }) =>
+//                       isActive
+//                         ? "border-b-2 border-orange-500 text-orange-500 transition duration-200"
+//                         : "hover:border-b-2 hover:border-orange-500 transition duration-200"
+//                     }
+//                     key={item.path}
+//                     to={item.path}
+//                   >
+//                     {item.name}
+//                   </NavLink>
+//                 ))}
+
+//                 <div
+//                   className={${
+//                     user && user?.email ? "hidden" : "flex"
+//                   } flex-col gap-5 items-center border mt-5 py-2 border-orange-400}
+//                 >
+//                   <NavLink
+//                     to="/auth/login"
+//                     className="uppercase border-b-2 hover:border-orange-500 text-orange-500 transition duration-200"
+//                   >
+//                     Login
+//                   </NavLink>
+//                   <NavLink
+//                     to="/auth/registration"
+//                     className="uppercase border-b-2 hover:border-orange-500 text-orange-500 transition duration-200"
+//                   >
+//                     Register
+//                   </NavLink>
+//                 </div>
+//               </ul>
+//             }
+//           </div>
+//           <div className="lg:hidden">
+//             {user?.email && (
+//               <>
+//                 <DropdownMenu>
+//                   <DropdownMenuTrigger asChild>
+//                     <Avatar className="cursor-pointer">
+//                       <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200  overflow-hidden">
+//                         <img
+//                           src={
+//                             user?.photoURL ||
+//                             "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
+//                           }
+//                           alt="Profile Picture"
+//                         />
+//                       </div>
+//                     </Avatar>
+//                   </DropdownMenuTrigger>
+//                   <DropdownMenuContent className="w-56">
+//                     <DropdownMenuLabel>My Account</DropdownMenuLabel>
+//                     <DropdownMenuSeparator />
+//                     <DropdownMenuGroup>
+//                       <Link to="my-profile">
+//                         <DropdownMenuItem className="cursor-pointer">
+//                           Profile
+//                           <DropdownMenuShortcut>
+//                             <User />
+//                           </DropdownMenuShortcut>
+//                         </DropdownMenuItem>
+//                       </Link>
+//                     </DropdownMenuGroup>
+//                     <DropdownMenuSeparator />
+
+//                     <DropdownMenuItem
+//                       onClick={handleLogOut}
+//                       className="cursor-pointer"
+//                     >
+//                       Log out
+//                       <DropdownMenuShortcut>
+//                         <LogOut />
+//                       </DropdownMenuShortcut>
+//                     </DropdownMenuItem>
+//                   </DropdownMenuContent>
+//                 </DropdownMenu>
+//               </>
+//             )}
+//           </div>
+//         </div>
+//       </div>
+//     </nav>
+//   );
+// };
+
+// export default Header; 
