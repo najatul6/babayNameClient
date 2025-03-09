@@ -25,8 +25,8 @@ const Header = () => {
   const [submenuOpen, setSubmenuOpen] = useState({});
   const [isPageLoad, setIsPageLoad] = useState(false);
   const { user, logOut } = useAuth();
-  const [userRole] = useRole();
-
+  const [dbUser] = useRole();
+  const photoURL = user?.photoURL || user?.reloadUserInfo?.photoUrl || "fallback-image-url";
   const toggleSubmenu = (index) => {
     setSubmenuOpen((prev) => ({
       ...prev,
@@ -116,18 +116,12 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Avatar className="cursor-pointer">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200 overflow-hidden">
-                    <img
-                      src={
-                        user?.reloadUserInfo?.photoUrl ||
-                        "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
-                      }
-                      alt="Profile Picture"
-                    />
+                  <img src={photoURL} alt="Profile Picture" className="w-full h-full object-cover" onError={(e) => e.target.src = "fallback-image-url"} />
                   </div>
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
-                {userRole === "admin" && (
+                {dbUser?.role === "admin" && (
                   <DropdownMenuLabel>Dashboard</DropdownMenuLabel>
                 )}
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
@@ -179,13 +173,7 @@ const Header = () => {
                 <DropdownMenuTrigger asChild>
                   <Avatar className="cursor-pointer">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200  overflow-hidden">
-                      <img
-                        src={
-                          user?.reloadUserInfo?.photoUrl ||
-                          "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
-                        }
-                        alt="Profile Picture"
-                      />
+                    <img src={photoURL} alt="Profile Picture" className="w-full h-full object-cover" onError={(e) => e.target.src = "fallback-image-url"} />
                     </div>
                   </Avatar>
                 </DropdownMenuTrigger>

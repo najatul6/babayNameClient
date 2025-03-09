@@ -6,15 +6,15 @@ import { Navigate, useLocation } from "react-router-dom";
 
 const AdminRoute = ({ children }) => {
   const { user, loading } = useAuth();
-  const [userRole,isPending] = useRole();
+  const [dbUser,isPending] = useRole();
   const location = useLocation();
   
  
   if (loading||isPending) return <Loading />
-  if (user && userRole !== "admin") {
+  if (user && dbUser?.role !== "admin") {
     return <Navigate to="/un-auth" replace />;
   }
-  if (user && userRole === "admin") {
+  if (user && dbUser?.role === "admin") {
     return children;
   } else {
     return <Navigate to="/auth/login" state={{ from: location }} replace />;
