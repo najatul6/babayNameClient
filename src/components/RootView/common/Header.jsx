@@ -93,7 +93,11 @@ const Header = () => {
               <NavLink
                 key={index}
                 to={item.path}
-                className="hover:text-orange-500 transition duration-200"
+                className={({ isActive }) =>
+                  `transition duration-200 ${
+                    isActive ? "text-orange-500 font-semibold" : "hover:text-orange-500"
+                  }`
+                }                
               >
                 {item.name}
               </NavLink>
@@ -200,7 +204,12 @@ const Header = () => {
                           <li key={subIndex}>
                             <NavLink
                               to={sub.path}
-                              className="block px-4 py-2 hover:bg-gray-100"
+                              className={({ isActive }) =>
+                                `block px-4 py-2 transition duration-200 ${
+                                  isActive ? "bg-gray-200 text-orange-500 font-semibold" : "hover:bg-gray-100"
+                                }`
+                              }
+                              
                             >
                               {sub.name}
                             </NavLink>
@@ -211,7 +220,12 @@ const Header = () => {
                   ) : (
                     <NavLink
                       onClick={() => setIsMenuOpen(false)}
-                      className="block px-4 py-2 hover:bg-gray-100"
+                      className={({ isActive }) => 
+                        `block px-4 py-2 transition duration-200 ${
+                          isActive ? "bg-gray-200 text-orange-500" : "hover:bg-gray-100"
+                        }`
+                      }
+                      
                       to={item.path}
                     >
                       {item.name}
