@@ -1,7 +1,6 @@
 import DashboardLayout from "@/Layout/DashboardLayout";
 import RootLayout from "@/Layout/RootLayout";
 import LogIn from "@/pages/Common/Auth/LogIn";
-import Register from "@/pages/Common/Auth/Register";
 import Error from "@/pages/Common/Error/Error";
 import UserAccount from "@/pages/Common/UserAccount/UserAccount";
 import Overview from "@/pages/DashboardView/Overview/Overview";
@@ -60,10 +59,7 @@ const Router = createBrowserRouter([
     path: "/auth/login",
     element: <LogIn />,
   },
-  {
-    path: "/auth/register",
-    element: <Register />,
-  },
+  
   {
     path: "/un-auth",
     element: <UnAuthorization />,

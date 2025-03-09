@@ -7,13 +7,12 @@ import { toast } from "react-toastify";
 import bgImages from "../../../assets/Pregnant in love.jpeg";
 
 const LogIn = () => {
-  const {  googleSignIn } = useAuth();
+  const { googleSignIn } = useAuth();
   const [error, setError] = useState(null);
   const location = useLocation();
   const navigate = useNavigate();
   const form = location?.state?.from?.pathname || "/";
   const axiosPublic = useAxiosPublic();
-  
 
   const handleGoogleSignIn = () => {
     toast.promise(
@@ -29,7 +28,9 @@ const LogIn = () => {
           };
           axiosPublic.post("/createUser", userData).then((res) => {
             console.log(res.data);
-            navigate(form, { replace: true });
+            if (res.data) {
+              navigate(form, { replace: true });
+            }
           });
         })
         .catch((error) => {
@@ -60,7 +61,7 @@ const LogIn = () => {
       </Helmet>
       <div className="rounded-xl sm:px-6 px-4 py-8 max-w-md lg:w-full shadow-[0_2px_10px_-3px_rgba(6,81,237,0.3)] bg-white/50 backdrop-blur-sm max-lg:mx-auto space-y-2">
         <p className="text-2xl font-bold dark:text-white">Create Account</p>
-        
+
         <p className="dark:text-gray-200">It will take less than 2 minutes</p>
         <button
           onClick={handleGoogleSignIn}
