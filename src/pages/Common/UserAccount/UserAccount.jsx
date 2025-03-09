@@ -1,6 +1,9 @@
 import { Button } from "@/components/ui/button";
+import useAuth from "@/hooks/useAuth";
 
 const UserAccount = () => {
+  const {user}=useAuth()
+  console.log(user);
   return (
     <div className="max-w-2xl mx-4 sm:max-w-sm md:max-w-sm lg:max-w-sm xl:max-w-sm sm:mx-auto md:mx-auto lg:mx-auto xl:mx-auto mt-16 bg-muted shadow-2xl rounded-lg text-gray-900">
       <div className="rounded-t-lg h-32 overflow-hidden">
@@ -13,7 +16,7 @@ const UserAccount = () => {
       <div className="mx-auto w-32 h-32 relative -mt-16 border-4 border-white rounded-full overflow-hidden flex justify-center items-center bg-gray-600">
         <img
           className="object-cover object-center h-32"
-          src="https://www.najatulislam.me/najatul6.png"
+          src={user?.reloadUserInfo.photoUrl}
           alt="Woman looking front"
         />
       </div>

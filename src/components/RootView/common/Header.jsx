@@ -116,7 +116,7 @@ const Header = () => {
                   <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200 overflow-hidden">
                     <img
                       src={
-                        user?.photoURL ||
+                        user?.reloadUserInfo?.photoUrl ||
                         "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
                       }
                       alt="Profile Picture"
@@ -176,7 +176,7 @@ const Header = () => {
                     <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200  overflow-hidden">
                       <img
                         src={
-                          user?.photoURL ||
+                          user?.reloadUserInfo?.photoUrl ||
                           "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
                         }
                         alt="Profile Picture"
