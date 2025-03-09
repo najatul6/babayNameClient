@@ -4,6 +4,20 @@ export const menu = [
     path: "/",
   },
   {
+    name: "Baby Names",
+    submenu: [
+      { name: "Popular Names", path: "/services/car-repair" },
+      { name: "Boy Names", path: "/services/car-repair" },
+      { name: "Girl Names", path: "/services/car-repair" },
+      { name: "Gender-Neutral Names", path: "/services/car-repair" },
+      { name: "Unique Names", path: "/services/car-repair" },
+      { name: "Classic Names", path: "/services/car-repair" },
+      { name: "Middle Names", path: "/services/car-repair" },
+      { name: "Names by Origin", path: "/services/car-repair" },
+      { name: "A-Z Baby Names", path: "/services/car-repair" },
+    ],
+  },
+  {
     name: "Pregnancy",
     submenu: [
       { name: "Pregnancy Week by Week", path: "/about/team" },
@@ -55,30 +69,8 @@ export const menu = [
       { name: "Early Pregnancy", path: "/services/car-repair" },
     ],
   },
-  {
-    name: "Baby Names",
-    submenu: [
-      { name: "Popular Names", path: "/services/car-repair" },
-      { name: "Boy Names", path: "/services/car-repair" },
-      { name: "Girl Names", path: "/services/car-repair" },
-      { name: "Gender-Neutral Names", path: "/services/car-repair" },
-      { name: "Unique Names", path: "/services/car-repair" },
-      { name: "Classic Names", path: "/services/car-repair" },
-      { name: "Middle Names", path: "/services/car-repair" },
-      { name: "Names by Origin", path: "/services/car-repair" },
-      { name: "A-Z Baby Names", path: "/services/car-repair" },
-      { name: "Work", path: "/services/car-repair" },
-    ],
-  },
-  {
-    name: "Baby Names",
-    submenu: [
-      { name: "Fourth", path: "/services/car-repair" },
-      { name: "Health", path: "/services/car-repair" },
-      { name: "Life", path: "/services/car-repair" },
-      { name: "Work", path: "/services/car-repair" },
-    ],
-  },
+  
+  
   {
     name: "Contact",
     path: "/contact",
