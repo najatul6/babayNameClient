@@ -9,7 +9,6 @@ const AdminRoute = ({ children }) => {
   const [userRole,isPending] = useRole();
   const location = useLocation();
   
-  console.log(userRole);
  
   if (loading||isPending) return <Loading />
   if (user && userRole !== "admin") {
