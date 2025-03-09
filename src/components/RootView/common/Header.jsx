@@ -18,12 +18,14 @@ import {
 import { LogOut, User, ChevronDown } from "lucide-react";
 import { toast } from "react-toastify";
 import { menu } from "@/lib/menu";
+import useRole from "@/hooks/useRole";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState({});
   const [isPageLoad, setIsPageLoad] = useState(false);
   const { user, logOut } = useAuth();
+  const [userRole] = useRole();
 
   const toggleSubmenu = (index) => {
     setSubmenuOpen((prev) => ({
@@ -125,6 +127,9 @@ const Header = () => {
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
+                {userRole === "admin" && (
+                  <DropdownMenuLabel>Dashboard</DropdownMenuLabel>
+                )}
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
                 <DropdownMenuGroup>
