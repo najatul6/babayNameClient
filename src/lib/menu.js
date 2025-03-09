@@ -37,17 +37,46 @@ export const menu = [
     ],
   },
   {
-    name: "Baby & Toddler",
+    name: "Parents",
     submenu: [
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
-      { name: "Newborn", path: "/services/car-repair" },
+      { name: "Fourth Trimester", path: "/services/car-repair" },
+      { name: "Health & Wellness", path: "/services/car-repair" },
+      { name: "Life & Relationships", path: "/services/car-repair" },
+      { name: "Work & Career", path: "/services/car-repair" },
+    ],
+  },
+ 
+  {
+    name: "Getting Pregnant",
+    submenu: [
+      { name: "Fertility", path: "/services/car-repair" },
+      { name: "Fertility & Family Planning", path: "/services/car-repair" },
+      { name: "Fertility Challenges", path: "/services/car-repair" },
+      { name: "Early Pregnancy", path: "/services/car-repair" },
+    ],
+  },
+  {
+    name: "Baby Names",
+    submenu: [
+      { name: "Popular Names", path: "/services/car-repair" },
+      { name: "Boy Names", path: "/services/car-repair" },
+      { name: "Girl Names", path: "/services/car-repair" },
+      { name: "Gender-Neutral Names", path: "/services/car-repair" },
+      { name: "Unique Names", path: "/services/car-repair" },
+      { name: "Classic Names", path: "/services/car-repair" },
+      { name: "Middle Names", path: "/services/car-repair" },
+      { name: "Names by Origin", path: "/services/car-repair" },
+      { name: "A-Z Baby Names", path: "/services/car-repair" },
+      { name: "Work", path: "/services/car-repair" },
+    ],
+  },
+  {
+    name: "Baby Names",
+    submenu: [
+      { name: "Fourth", path: "/services/car-repair" },
+      { name: "Health", path: "/services/car-repair" },
+      { name: "Life", path: "/services/car-repair" },
+      { name: "Work", path: "/services/car-repair" },
     ],
   },
   {
