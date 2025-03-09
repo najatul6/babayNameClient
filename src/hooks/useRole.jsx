@@ -9,7 +9,7 @@ const useRole = () => {
       queryKey: [user?.email, "dbUser"],
       queryFn: async () => {
         const res = await axiosPublic.get(`/users/${user?.email}`);
-        return res.data.role;
+        return res.data;
       },
     });
     return [dbUser,isPending];

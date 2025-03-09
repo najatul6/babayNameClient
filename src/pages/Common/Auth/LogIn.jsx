@@ -14,21 +14,35 @@ const LogIn = () => {
   const form = location?.state?.from?.pathname || "/";
   const axiosPublic = useAxiosPublic();
 
-  const handleGoogleSignIn = () => {
+  const handleGoogleSignIn = async () => {
     toast.promise(
       googleSignIn()
-        .then((result) => {
+        .then(async (result) => {
+          const { displayName, email, uid, photoURL } = result.user;
+
+          // 🚨 First, check if the user already exists in the database
+          const existingUser = await axiosPublic.get(`/users/${email}`);
+          if (existingUser.data) {
+            navigate(form || "/", { replace: true });
+            return;
+          }
+
+          // Create user object
           const userData = {
-            name: result.user.displayName,
-            email: result.user.email,
+            name: displayName,
+            email,
             role: "user",
-            uid: result.user.uid,
-            photoURL: result.user.photoURL,
+            uid,
+            photoURL,
             createdAt: new Date().toISOString(),
           };
-          axiosPublic.post("/createUser", userData).then((res) => {
-            if (res.data) {
-              navigate(form, { replace: true });
+
+          // Save user in the database
+          return axiosPublic.post("/createUser", userData).then((res) => {
+            if (res.data.insertedId) {
+              navigate(form || "/", { replace: true });
+            } else {
+              throw new Error("Failed to save user in database");
             }
           });
         })
@@ -40,10 +54,11 @@ const LogIn = () => {
       {
         pending: "Signing In...",
         success: "User Signed In Successfully",
-        error: `${error}`,
+        error: `Error signing in ${error.code}`,
       }
     );
   };
+
   return (
     <div
       style={{

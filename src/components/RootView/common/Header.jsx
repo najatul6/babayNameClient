@@ -26,7 +26,6 @@ const Header = () => {
   const [isPageLoad, setIsPageLoad] = useState(false);
   const { user, logOut } = useAuth();
   const [dbUser] = useRole();
-  const photoURL = user?.photoURL || user?.reloadUserInfo?.photoUrl || "fallback-image-url";
   const toggleSubmenu = (index) => {
     setSubmenuOpen((prev) => ({
       ...prev,
@@ -116,7 +115,7 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Avatar className="cursor-pointer">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200 overflow-hidden">
-                  <img src={photoURL} alt="Profile Picture" className="w-full h-full object-cover" onError={(e) => e.target.src = "fallback-image-url"} />
+                  <img src={dbUser?.photoURL} alt="Profile Picture" className="w-full h-full object-cover"  />
                   </div>
                 </Avatar>
               </DropdownMenuTrigger>
@@ -173,7 +172,7 @@ const Header = () => {
                 <DropdownMenuTrigger asChild>
                   <Avatar className="cursor-pointer">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200  overflow-hidden">
-                    <img src={photoURL} alt="Profile Picture" className="w-full h-full object-cover" onError={(e) => e.target.src = "fallback-image-url"} />
+                    <img src={dbUser?.photoURL} alt="Profile Picture" className="w-full h-full object-cover"  />
                     </div>
                   </Avatar>
                 </DropdownMenuTrigger>
