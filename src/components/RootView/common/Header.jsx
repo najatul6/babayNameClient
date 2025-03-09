@@ -19,8 +19,6 @@ import { LogOut, User, ChevronDown } from "lucide-react";
 import { toast } from "react-toastify";
 import { menu } from "@/lib/menu";
 
-
-
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [submenuOpen, setSubmenuOpen] = useState({});
@@ -79,9 +77,11 @@ const Header = () => {
                         to={sub.path}
                         className={({ isActive }) =>
                           `block px-4 py-2 transition duration-200 ${
-                            isActive ? "bg-orange-500 text-white" : "hover:bg-gray-100"
+                            isActive
+                              ? "bg-orange-500 text-white"
+                              : "hover:bg-gray-100"
                           }`
-                        }                        
+                        }
                       >
                         {sub.name}
                       </NavLink>
@@ -95,9 +95,11 @@ const Header = () => {
                 to={item.path}
                 className={({ isActive }) =>
                   `transition duration-200 ${
-                    isActive ? "text-orange-500 font-semibold" : "hover:text-orange-500"
+                    isActive
+                      ? "text-orange-500 font-semibold"
+                      : "hover:text-orange-500"
                   }`
-                }                
+                }
               >
                 {item.name}
               </NavLink>
@@ -159,6 +161,57 @@ const Header = () => {
 
         {/* Mobile Menu */}
         <div className="lg:hidden flex items-center gap-1">
+          {!user?.email ? (
+            <NavLink
+              to="/auth/login"
+              className="block px-4 py-2 hover:bg-gray-100"
+            >
+              Login
+            </NavLink>
+          ) : (
+            <>
+              <DropdownMenu>
+                <DropdownMenuTrigger asChild>
+                  <Avatar className="cursor-pointer">
+                    <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200  overflow-hidden">
+                      <img
+                        src={
+                          user?.photoURL ||
+                          "https://cdn.pixabay.com/photo/2019/08/11/18/59/icon-4399701_1280.png"
+                        }
+                        alt="Profile Picture"
+                      />
+                    </div>
+                  </Avatar>
+                </DropdownMenuTrigger>
+                <DropdownMenuContent className="w-56">
+                  <DropdownMenuLabel>My Account</DropdownMenuLabel>
+                  <DropdownMenuSeparator />
+                  <DropdownMenuGroup>
+                    <Link to="my-profile">
+                      <DropdownMenuItem className="cursor-pointer">
+                        Profile
+                        <DropdownMenuShortcut>
+                          <User />
+                        </DropdownMenuShortcut>
+                      </DropdownMenuItem>
+                    </Link>
+                  </DropdownMenuGroup>
+                  <DropdownMenuSeparator />
+
+                  <DropdownMenuItem
+                    onClick={handleLogOut}
+                    className="cursor-pointer"
+                  >
+                    Log out
+                    <DropdownMenuShortcut>
+                      <LogOut />
+                    </DropdownMenuShortcut>
+                  </DropdownMenuItem>
+                </DropdownMenuContent>
+              </DropdownMenu>
+            </>
+          )}
           <div className="border p-1">
             {!isMenuOpen ? (
               <RiMenuAddLine
@@ -177,12 +230,12 @@ const Header = () => {
 
             <ul
               className={`capitalize w-full py-5 flex animate__animated flex-col lg:hidden gap-5 absolute z-50 bg-white/40 backdrop-blur-md  min-h-screen top-20  left-0 ${
-                                  isMenuOpen
-                                    ? "animate__fadeInLeft "
-                                    : isPageLoad
-                                    ? "animate__fadeOutRight flex "
-                                    : "hidden"
-                                } `}
+                isMenuOpen
+                  ? "animate__fadeInLeft "
+                  : isPageLoad
+                  ? "animate__fadeOutRight flex "
+                  : "hidden"
+              } `}
             >
               {menu.map((item, index) => (
                 <div key={index}>
@@ -210,10 +263,11 @@ const Header = () => {
                               to={sub.path}
                               className={({ isActive }) =>
                                 `block px-4 py-2 transition duration-200 ${
-                                  isActive ? "bg-gray-200 text-orange-500 font-semibold" : "hover:bg-gray-100"
+                                  isActive
+                                    ? "bg-gray-200 text-orange-500 font-semibold"
+                                    : "hover:bg-gray-100"
                                 }`
                               }
-                              
                             >
                               {sub.name}
                             </NavLink>
@@ -224,12 +278,13 @@ const Header = () => {
                   ) : (
                     <NavLink
                       onClick={() => setIsMenuOpen(false)}
-                      className={({ isActive }) => 
+                      className={({ isActive }) =>
                         `block px-4 py-2 transition duration-200 ${
-                          isActive ? "bg-gray-200 text-orange-500" : "hover:bg-gray-100"
+                          isActive
+                            ? "bg-gray-200 text-orange-500"
+                            : "hover:bg-gray-100"
                         }`
                       }
-                      
                       to={item.path}
                     >
                       {item.name}
@@ -237,16 +292,6 @@ const Header = () => {
                   )}
                 </div>
               ))}
-
-              {/* Mobile Login */}
-              {!user?.email && (
-                <NavLink
-                  to="/auth/login"
-                  className="block px-4 py-2 hover:bg-gray-100"
-                >
-                  Login
-                </NavLink>
-              )}
             </ul>
           </div>
         </div>
@@ -256,13 +301,6 @@ const Header = () => {
 };
 
 export default Header;
-
-
-
-
-
-  
-       
 
 //         <div className="lg:hidden flex items-center gap-1">
 //           <div className="lg:hidden rounded-md border p-1">
@@ -379,4 +417,4 @@ export default Header;
 //   );
 // };
 
-// export default Header; 
+// export default Header;
