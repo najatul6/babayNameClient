@@ -15,7 +15,7 @@ import {
   DropdownMenuShortcut,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { LogOut, User, ChevronDown } from "lucide-react";
+import { LogOut, User, ChevronDown, LayoutDashboard } from "lucide-react";
 import { toast } from "react-toastify";
 import { menu } from "@/lib/menu";
 import useRole from "@/hooks/useRole";
@@ -115,16 +115,29 @@ const Header = () => {
               <DropdownMenuTrigger asChild>
                 <Avatar className="cursor-pointer">
                   <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200 overflow-hidden">
-                  <img src={dbUser?.photoURL} alt="Profile Picture" className="w-full h-full object-cover"  />
+                    <img
+                      src={dbUser?.photoURL}
+                      alt="Profile Picture"
+                      className="w-full h-full object-cover"
+                    />
                   </div>
                 </Avatar>
               </DropdownMenuTrigger>
               <DropdownMenuContent className="w-56">
-                {dbUser?.role === "admin" && (
-                  <DropdownMenuLabel>Dashboard</DropdownMenuLabel>
-                )}
                 <DropdownMenuLabel>My Account</DropdownMenuLabel>
                 <DropdownMenuSeparator />
+                {dbUser?.role === "admin" && (
+                  <DropdownMenuGroup>
+                    <Link to="/dashboard/overview">
+                      <DropdownMenuItem className="cursor-pointer">
+                        Dashboard{" "}
+                        <DropdownMenuShortcut>
+                          <LayoutDashboard />
+                        </DropdownMenuShortcut>
+                      </DropdownMenuItem>
+                    </Link>
+                  </DropdownMenuGroup>
+                )}
                 <DropdownMenuGroup>
                   <Link to="/my-profile">
                     <DropdownMenuItem className="cursor-pointer">
@@ -135,6 +148,7 @@ const Header = () => {
                     </DropdownMenuItem>
                   </Link>
                 </DropdownMenuGroup>
+
                 <DropdownMenuSeparator />
                 <DropdownMenuItem
                   onClick={handleLogOut}
@@ -172,13 +186,29 @@ const Header = () => {
                 <DropdownMenuTrigger asChild>
                   <Avatar className="cursor-pointer">
                     <div className="flex items-center justify-center w-10 h-10 rounded-full border-[3px] p-[1px] border-orange-600 bg-gray-200  overflow-hidden">
-                    <img src={dbUser?.photoURL} alt="Profile Picture" className="w-full h-full object-cover"  />
+                      <img
+                        src={dbUser?.photoURL}
+                        alt="Profile Picture"
+                        className="w-full h-full object-cover"
+                      />
                     </div>
                   </Avatar>
                 </DropdownMenuTrigger>
                 <DropdownMenuContent className="w-56">
                   <DropdownMenuLabel>My Account</DropdownMenuLabel>
                   <DropdownMenuSeparator />
+                  {dbUser?.role === "admin" && (
+                  <DropdownMenuGroup>
+                    <Link to="/dashboard/overview">
+                      <DropdownMenuItem className="cursor-pointer">
+                        Dashboard{" "}
+                        <DropdownMenuShortcut>
+                          <LayoutDashboard />
+                        </DropdownMenuShortcut>
+                      </DropdownMenuItem>
+                    </Link>
+                  </DropdownMenuGroup>
+                )}
                   <DropdownMenuGroup>
                     <Link to="my-profile">
                       <DropdownMenuItem className="cursor-pointer">
