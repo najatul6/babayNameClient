@@ -71,7 +71,7 @@ const Header = () => {
                 >
                   {item.name} <ChevronDown className="w-4 h-4" />
                 </NavLink>
-                <ul className="absolute left-0 top-full mt-1 w-48 bg-white shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 invisible group-hover:visible">
+                <ul className="absolute left-0 top-full mt-1 w-48 bg-white z-[500] shadow-md rounded-lg opacity-0 group-hover:opacity-100 transition-opacity duration-200 invisible group-hover:visible">
                   {item.submenu.map((sub, subIndex) => (
                     <li key={subIndex}>
                       <NavLink
