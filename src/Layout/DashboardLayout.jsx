@@ -8,7 +8,7 @@ const DashboardLayout = () => {
   const { user } = useAuth();
   return (
     <div className="relative h-screen scroll-smooth">
-      <header className="flex shadow-md py-1 px-4 sm:px-7 bg-background2 min-h-[70px] tracking-wide z-[110] fixed top-0 w-full">
+      <header className="flex shadow-md py-1 px-4 sm:px-7 bg-background2 min-h-[70px] tracking-wide z-[9999] fixed top-0 w-full">
         <div className="flex flex-wrap items-center justify-between gap-4 w-full relative bg-background2">
           <Link to="/" className="flex justify-center items-center gap-2">
             <div className="flex justify-center items-center w-[150px] h-[30px]">
