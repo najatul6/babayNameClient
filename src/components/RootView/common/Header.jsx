@@ -63,8 +63,8 @@ const Header = () => {
                   className={({ isActive }) =>
                     `flex items-center gap-1 transition duration-200 ${
                       isActive
-                        ? "text-orange-500 border-b-2 border-orange-500"
-                        : "hover:text-orange-500"
+                        ? "text-baseColor border-b-2 border-baseColor font-semibold"
+                        : "hover:text-baseColor"
                     }`
                   }
                   to={item.path}
@@ -79,7 +79,7 @@ const Header = () => {
                         className={({ isActive }) =>
                           `block px-4 py-2 transition duration-200 ${
                             isActive
-                              ? "bg-orange-500 text-white"
+                              ? "bg-baseColor text-white font-semibold"
                               : "hover:bg-gray-100"
                           }`
                         }
@@ -97,8 +97,8 @@ const Header = () => {
                 className={({ isActive }) =>
                   `transition duration-200 ${
                     isActive
-                      ? "text-orange-500 font-semibold"
-                      : "hover:text-orange-500"
+                      ? "text-baseColor font-semibold"
+                      : "hover:text-baseColor"
                   }`
                 }
               >
@@ -164,7 +164,7 @@ const Header = () => {
           ) : (
             <NavLink
               to="/auth/login"
-              className="hover:text-orange-500 transition duration-200"
+              className="hover:text-baseColor transition duration-200"
             >
               Login
             </NavLink>
@@ -286,7 +286,7 @@ const Header = () => {
                               className={({ isActive }) =>
                                 `block px-4 py-2 transition duration-200 ${
                                   isActive
-                                    ? "bg-gray-200 text-orange-500 font-semibold"
+                                    ? "bg-gray-200 text-baseColor font-semibold"
                                     : "hover:bg-gray-100"
                                 }`
                               }
@@ -303,7 +303,7 @@ const Header = () => {
                       className={({ isActive }) =>
                         `block px-4 py-2 transition duration-200 ${
                           isActive
-                            ? "bg-gray-200 text-orange-500"
+                            ? "bg-gray-200 text-baseColor font-semibold"
                             : "hover:bg-gray-100"
                         }`
                       }
