@@ -4,7 +4,9 @@ import { Outlet } from "react-router-dom";
 const RootLayout = () => {
   return (
     <div className="flex flex-col bg-white overflow-hidden">
+      <div className="w-full max-w-[1920px] mx-auto">
       <Header />
+      </div>
       <hr />
       <div className="flex flex-col w-full">
         <Outlet />
