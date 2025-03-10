@@ -22,8 +22,8 @@ const Banner = () => {
           alt="bg"
         />
         <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
-          <h1 className="text-2xl  xl:text-6xl text-center text-white font-bold leading-tight">
-            The Freedom to Create the Pages You Want
+          <h1 className="text-2xl  xl:text-4xl text-center text-baseColor font-bold leading-tight backdrop-blur-sm">
+          Get real-life product recommendations from other parents, personalized just for you.
           </h1>
         </div>
         <div className="flex justify-center items-center mb-10 sm:mb-20">
@@ -37,30 +37,30 @@ const Banner = () => {
       </div>
       <div className="container mx-auto flex justify-center md:-mt-60 -mt-10 ">
         <div className="relative sm:w-2/3 w-11/12">
-          <div className="flex flex-col md:flex-row justify-center items-center gap-6 bg-gray-400 py-2 px-1 md:py-10 md:px-5  md:mt-20">
+          <div className="flex flex-col md:flex-row justify-center items-center gap-6 bg-white rounded-md border-2 border-baseColor py-2 px-1 md:py-10 md:px-5  md:mt-20">
             <div>
-              <h2 className="text-xl text-center font-bold leading-tight">
+              <h2 className="text-xl font-bold leading-tight text-baseColor">
                 Baby Names &rarr;
               </h2>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 Discover thousands of options using our baby name generators and
                 lists for every alphabet letter, style and origin.
               </p>
             </div>
             <div>
-              <h2 className="text-xl text-center font-bold leading-tight">
+              <h2 className="text-xl  font-bold leading-tight text-baseColor">
                 Pregnancy Week by Week &rarr;
               </h2>
-              <p className="mt-5 ">
+              <p className="mt-5 text-justify">
                 Decode your pregnancy symptoms, get updates on baby’s
                 development and tackle your weekly to-dos.
               </p>
             </div>
             <div>
-              <h2 className="text-xl text-center font-bold leading-tight ">
+              <h2 className="text-xl font-bold leading-tight text-baseColor">
                 Baby Month by Month &rarr;
               </h2>
-              <p className="mt-5">
+              <p className="mt-5 text-justify">
                 Learn about baby’s milestones at every age and stage—from baby’s
                 first day home to their first birthday.
               </p>
