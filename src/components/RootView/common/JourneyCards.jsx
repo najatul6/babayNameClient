@@ -21,7 +21,7 @@ const JourneyCards = ({ banner, title, description }) => {
             </div>
             <div className="text-center mt-10">
                 <p className="text-gray-700 mt-2 px-4">
-                    {description}
+                    {description?.slice(0,50)}...
                 </p>
             </div>
         </div>
