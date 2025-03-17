@@ -4,8 +4,8 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   return (
     <footer className="bg-gray-900 text-white py-10 mt-10 animate__animated animate__fadeInUp">
-      <div className="max-w-7xl mx-auto px-6 lg:px-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left">
+      <div className="w-full mx-auto px-6 ">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-center md:text-left place-items-center  lg:px-10">
           
           {/* Company Info */}
           <div>
@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Baby Name. All rights reserved By - <Link className="text-orange-500" to="https://najatul-islam.vercel.app/" target="_blank">Md Najatul Islam</Link>.</p>
+          <p>© {new Date().getFullYear()} Baby Name. All rights reserved By - <Link className="text-orange-500 hover:underline" to="https://najatul-islam.vercel.app/" target="_blank">Md Najatul Islam</Link>.</p>
         </div>
       </div>
     </footer>
