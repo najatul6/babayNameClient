@@ -9,7 +9,7 @@ const Banner = () => {
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat",
         }}
-        className="relative rounded-lg  container mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64"
+        className="relative rounded-lg mx-auto flex flex-col items-center pt-12 sm:pt-24 pb-24 sm:pb-32 md:pb-48 lg:pb-56 xl:pb-64"
       >
         <img
           className="mr-2 lg:mr-12 mt-2 lg:mt-12 absolute right-0 top-0"
@@ -23,7 +23,7 @@ const Banner = () => {
         />
         <div className="w-11/12 sm:w-2/3 mb-5 sm:mb-10">
           <h1 className="text-2xl  xl:text-4xl text-center text-baseColor font-bold leading-tight backdrop-blur-sm">
-          Get real-life product recommendations from other parents, personalized just for you.
+            Get real-life product recommendations from other parents, personalized just for you.
           </h1>
         </div>
         <div className="flex justify-center items-center mb-10 sm:mb-20">
@@ -35,8 +35,8 @@ const Banner = () => {
           </button>
         </div>
       </div>
-      <div className="container mx-auto flex justify-center md:-mt-60 -mt-10 ">
-        <div className="relative sm:w-2/3 w-11/12">
+      <div className="mx-auto flex justify-center md:-mt-60 -mt-10 ">
+        <div className="relative  w-11/12">
           <div className="flex flex-col md:flex-row justify-center items-center gap-6 bg-white rounded-md border-2 border-baseColor py-2 px-1 md:py-10 md:px-5  md:mt-20">
             <div>
               <h2 className="text-xl font-bold leading-tight text-baseColor">
