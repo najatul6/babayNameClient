@@ -2,7 +2,7 @@ import PropTypes from "prop-types"
 
 const JourneyCards = ({ banner, title, description }) => {
     return (
-        <div className="border rounded-lg shadow-md p-4 max-w-sm bg-white animate__animated animate__fadeIn">
+        <div className="border rounded-lg shadow-md p-4 max-w-sm bg-gray-100 animate__animated animate__fadeIn">
             <div className="relative border">
 
                 <div className="overflow-hidden rounded-lg">

@@ -13,17 +13,16 @@ const JourneySection = () => {
   return (
     <div>
         <SectionHeader title="Your Journey Starts Here"/>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {journeyCards.map((card) => (
             <JourneyCards
               key={card.id}
-              banner={card.banner}
+              banner={card.logo}
               title={card.title}
               description={card.description}
             />
           ))}
         </div>
-        <JourneyCards/>
     </div>
   )
 }
