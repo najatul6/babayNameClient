@@ -11,6 +11,7 @@ import { createBrowserRouter } from "react-router-dom";
 import AdminRoute from "./AdminRoute";
 import UnAuthorization from "@/pages/Common/UnAuthorization/UnAuthorization";
 import PrivateRoute from "./PrivateRoute";
+import JourneyDetails from "@/pages/RootView/JourneyDetails/JourneyDetails";
 
 const Router = createBrowserRouter([
   {
@@ -21,6 +22,11 @@ const Router = createBrowserRouter([
       {
         path: "/",
         element: <Home />,
+      },
+      {
+        path:"journey/:id",
+        element: <JourneyDetails />,
+        loader:({params})=>fetch(`/journey.json/${params.id}`)
       },
       {
         path: "about",
