@@ -1,7 +1,8 @@
 [
   {
     "id": "post-001",
-    "title": "Getting Pregnant: Your Complete Guide",
+    "title": "Getting Pregnant: ",
+    "subTitle":"Your Complete Guide",
     "logo": "https://i.ibb.co.com/gb9wGMpv/n-H-u7-WDc-GZW8-YSbe-PHNZam-Ks-Uw0-Srk-Q8-HG5-Lh-KU6j-H51w-J7gbod-WMxi6-p-Yxgdp-UHGf-C2b07-Ov-Yw7-Lq.jpg",
     "description": "Everything you need to know about fertility, ovulation, and preparing for pregnancy.",
     "content": {
@@ -39,7 +40,8 @@
   },
   {
     "id": "post-002",
-    "title": "Pregnancy: What to Expect Each Trimester",
+    "title": "Pregnancy",
+    "subTitle":"What to Expect Each Trimester",
     "logo": "https://i.ibb.co.com/tpYGNwVT/Parents-a-pregnancy-symptom-timeline-Zoe-Hansen-final-cb53a241d4804051b4d832869ffbdb8f.jpg",
     "description": "A complete guide on symptoms, baby development, and what to expect...",
     "content": {
@@ -77,7 +79,8 @@
   },
   {
     "id": "post-003",
-    "title": "Newborn & Baby Care: The First Few Months",
+    "title": "Newborn & Baby Care",
+    "subTitle":"The First Few Months",
     "logo": "https://i.ibb.co.com/23BRtjFd/5-Essential-Baby-Care-Products-a-New-Mom-Must-Have-1200x1200-crop-center.jpg",
     "description": "A comprehensive guide on newborn care, including feeding, sleep routines...",
     "content": {
@@ -115,7 +118,8 @@
   },
   {
     "id": "post-004",
-    "title": "Toddler Milestones & Behavior",
+    "title": "Toddler",
+    "subTitle":"Milestones & Behavior",
     "logo": "https://i.ibb.co.com/jvvwxh6G/milestones-blog.jpg",
     "description": "A look into toddler development, discipline strategies, and communication tips.",
     "content": {
