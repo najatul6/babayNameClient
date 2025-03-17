@@ -46,11 +46,12 @@ const Header = () => {
       <div className="w-11/12 mx-auto py-5 flex justify-between items-center relative">
         <Link to="/" className="logo">
           <div className="flex justify-center items-center w-[120px] h-[30px]">
-            <img
+            {/* <img
               src={brandImg}
               alt="Logo"
               className="w-full h-fit object-center"
-            />
+            /> */}
+            <h1 className="text-2xl font-bold text-baseColor">Baby<span className="text-pink-500">Names</span></h1>
           </div>
         </Link>
 
