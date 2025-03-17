@@ -157,7 +157,8 @@
   },
   {
     "id": "post-005",
-    "title": "Preschool & Early Learning: Setting the Foundation",
+    "title": "Preschool & Early Learning",
+    "subTitle":"Setting the Foundation",
     "logo": "https://i.ibb.co.com/yFLmJftQ/EY-Gachibowli.png",
     "description": "Tips and strategies for preparing your child for preschool and early learning.",
     "content": {
@@ -195,7 +196,8 @@
   },
   {
     "id": "post-006",
-    "title": "Parenting: Managing the Ups & Downs",
+    "title": "Parenting",
+    "subTitle":"Managing the Ups & Downs",
     "logo": "https://i.ibb.co.com/prkf3Hyh/images-q-tbn-ANd9-Gc-SVm-Vip-UGsas1o-BHex-Ym4m-LMf0-ZDo-S-MVr-PA-s.jpg",
     "description": "General parenting tips, discipline strategies, and ways to create a happy home.",
     "content": {
@@ -233,7 +235,8 @@
   },
   {
     "id": "post-007",
-    "title": "Family Health & Wellness: Keeping Your Loved Ones Safe",
+    "title": "Family Health & Wellness",
+    "subTitle":"Keeping Your Loved Ones Safe",
     "logo": "https://i.ibb.co.com/cXgkMmHK/family-heart.jpg",
     "description": "A guide to keeping your family healthy, from nutrition to exercise.",
     "content": {
