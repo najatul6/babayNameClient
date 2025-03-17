@@ -9,9 +9,9 @@ const Footer = () => {
           
           {/* Company Info */}
           <div>
-            <h2 className="text-2xl font-bold text-white mb-3">🚗 AutoSphere</h2>
+            <h2 className="text-2xl font-bold text-white mb-3">Baby<span className="text-pink-500">Names</span></h2>
             <p className="text-gray-400 text-sm">
-              Your go-to platform for car services, parts, and expert guidance.
+              Your go-to platform for Baby Cares, Baby Names, and expert guidance.
               Drive with confidence!
             </p>
           </div>
@@ -41,7 +41,7 @@ const Footer = () => {
 
         {/* Bottom Section */}
         <div className="border-t border-gray-700 mt-6 pt-4 text-center text-sm text-gray-500">
-          <p>© {new Date().getFullYear()} Baby Name. All rights reserved By - <Link className="text-orange-500 hover:underline" to="https://najatul-islam.vercel.app/" target="_blank">Md Najatul Islam</Link>.</p>
+          <p>© {new Date().getFullYear()} Baby Names. All rights reserved By - <Link className="text-pink-500 hover:underline" to="https://najatul-islam.vercel.app/" target="_blank">Md Najatul Islam</Link>.</p>
         </div>
       </div>
     </footer>
