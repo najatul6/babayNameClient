@@ -1,138 +1,268 @@
-{
-    "posts": [
-      {
-        "id": "post-001",
-        "title": "Getting Pregnant: Your Complete Guide",
-        "logo": "https://i.ibb.co.com/gb9wGMpv/n-H-u7-WDc-GZW8-YSbe-PHNZam-Ks-Uw0-Srk-Q8-HG5-Lh-KU6j-H51w-J7gbod-WMxi6-p-Yxgdp-UHGf-C2b07-Ov-Yw7-Lq.jpg",
-        "description": "Everything you need to know about fertility, ovulation, and preparing for pregnancy.",
-        "content": {
-          "introduction": "Trying to conceive can be an exciting yet challenging journey...",
-          "sections": [
-            { "heading": "Understanding Your Cycle", "body": "Tracking ovulation is key to conception..." },
-            { "heading": "Healthy Lifestyle Choices", "body": "A balanced diet, regular exercise..." },
-            { "heading": "Fertility Treatments", "body": "If you've been trying for over a year..." }
-          ],
-          "tips": [ "Maintain a healthy weight...", "Take prenatal vitamins...", "Quit smoking..." ],
-          "faqs": [
-            { "question": "How long does it take to get pregnant?", "answer": "Most couples conceive..." },
-            { "question": "Can stress affect fertility?", "answer": "Yes, high stress levels can..." }
-          ]
+[
+  {
+    "id": "post-001",
+    "title": "Getting Pregnant: Your Complete Guide",
+    "logo": "https://i.ibb.co.com/gb9wGMpv/n-H-u7-WDc-GZW8-YSbe-PHNZam-Ks-Uw0-Srk-Q8-HG5-Lh-KU6j-H51w-J7gbod-WMxi6-p-Yxgdp-UHGf-C2b07-Ov-Yw7-Lq.jpg",
+    "description": "Everything you need to know about fertility, ovulation, and preparing for pregnancy.",
+    "content": {
+      "introduction": "Trying to conceive can be an exciting yet challenging journey...",
+      "sections": [
+        {
+          "heading": "Understanding Your Cycle",
+          "body": "Tracking ovulation is key to conception..."
+        },
+        {
+          "heading": "Healthy Lifestyle Choices",
+          "body": "A balanced diet, regular exercise..."
+        },
+        {
+          "heading": "Fertility Treatments",
+          "body": "If you've been trying for over a year..."
         }
-      },
-      {
-        "id": "post-002",
-        "title": "Pregnancy: What to Expect Each Trimester",
-        "logo": "https://i.ibb.co.com/tpYGNwVT/Parents-a-pregnancy-symptom-timeline-Zoe-Hansen-final-cb53a241d4804051b4d832869ffbdb8f.jpg",
-        "description": "A complete guide on symptoms, baby development, and what to expect...",
-        "content": {
-          "introduction": "Pregnancy is a life-changing journey filled with physical and emotional changes...",
-          "sections": [
-            { "heading": "First Trimester", "body": "Most pregnancy symptoms, such as nausea and fatigue..." },
-            { "heading": "Second Trimester", "body": "Your belly grows, morning sickness subsides..." },
-            { "heading": "Third Trimester", "body": "The final stretch before birth! Your baby gains weight..." }
-          ],
-          "tips": [ "Stay hydrated...", "Regular prenatal check-ups...", "Prepare a birth plan..." ],
-          "faqs": [
-            { "question": "Can I exercise during pregnancy?", "answer": "Yes, light exercises like walking..." },
-            { "question": "What foods should I avoid?", "answer": "Avoid raw seafood, unpasteurized dairy..." }
-          ]
+      ],
+      "tips": [
+        "Maintain a healthy weight...",
+        "Take prenatal vitamins...",
+        "Quit smoking..."
+      ],
+      "faqs": [
+        {
+          "question": "How long does it take to get pregnant?",
+          "answer": "Most couples conceive..."
+        },
+        {
+          "question": "Can stress affect fertility?",
+          "answer": "Yes, high stress levels can..."
         }
-      },
-      {
-        "id": "post-003",
-        "title": "Newborn & Baby Care: The First Few Months",
-        "logo": "https://i.ibb.co.com/23BRtjFd/5-Essential-Baby-Care-Products-a-New-Mom-Must-Have-1200x1200-crop-center.jpg",
-        "description": "A comprehensive guide on newborn care, including feeding, sleep routines...",
-        "content": {
-          "introduction": "The first few months with a newborn can be overwhelming...",
-          "sections": [
-            { "heading": "Feeding Your Baby", "body": "Breastfeeding and formula feeding both have benefits..." },
-            { "heading": "Sleep Patterns", "body": "Newborns sleep up to 16 hours a day..." },
-            { "heading": "Health & Vaccinations", "body": "Regular doctor visits and vaccinations..." }
-          ],
-          "tips": [ "Swaddling can help...", "Try white noise...", "Skin-to-skin contact..." ],
-          "faqs": [
-            { "question": "How often should I feed my newborn?", "answer": "Every 2-3 hours..." },
-            { "question": "When should I introduce solid foods?", "answer": "Around six months..." }
-          ]
+      ]
+    }
+  },
+  {
+    "id": "post-002",
+    "title": "Pregnancy: What to Expect Each Trimester",
+    "logo": "https://i.ibb.co.com/tpYGNwVT/Parents-a-pregnancy-symptom-timeline-Zoe-Hansen-final-cb53a241d4804051b4d832869ffbdb8f.jpg",
+    "description": "A complete guide on symptoms, baby development, and what to expect...",
+    "content": {
+      "introduction": "Pregnancy is a life-changing journey filled with physical and emotional changes...",
+      "sections": [
+        {
+          "heading": "First Trimester",
+          "body": "Most pregnancy symptoms, such as nausea and fatigue..."
+        },
+        {
+          "heading": "Second Trimester",
+          "body": "Your belly grows, morning sickness subsides..."
+        },
+        {
+          "heading": "Third Trimester",
+          "body": "The final stretch before birth! Your baby gains weight..."
         }
-      },
-      {
-        "id": "post-004",
-        "title": "Toddler Milestones & Behavior",
-        "logo": "https://i.ibb.co.com/jvvwxh6G/milestones-blog.jpg",
-        "description": "A look into toddler development, discipline strategies, and communication tips.",
-        "content": {
-          "introduction": "The toddler stage is full of rapid learning and growth...",
-          "sections": [
-            { "heading": "Language & Communication", "body": "By age two, toddlers can say 50+ words..." },
-            { "heading": "Discipline & Behavior", "body": "Setting boundaries with positive reinforcement..." },
-            { "heading": "Nutrition & Meal Planning", "body": "Toddlers can be picky eaters..." }
-          ],
-          "tips": [ "Encourage learning through play...", "Be patient with tantrums...", "Establish consistent routines..." ],
-          "faqs": [
-            { "question": "How can I handle toddler tantrums?", "answer": "Stay calm, acknowledge their feelings..." },
-            { "question": "How much sleep does a toddler need?", "answer": "11-14 hours per day..." }
-          ]
+      ],
+      "tips": [
+        "Stay hydrated...",
+        "Regular prenatal check-ups...",
+        "Prepare a birth plan..."
+      ],
+      "faqs": [
+        {
+          "question": "Can I exercise during pregnancy?",
+          "answer": "Yes, light exercises like walking..."
+        },
+        {
+          "question": "What foods should I avoid?",
+          "answer": "Avoid raw seafood, unpasteurized dairy..."
         }
-      },
-      {
-        "id": "post-005",
-        "title": "Preschool & Early Learning: Setting the Foundation",
-        "logo": "https://i.ibb.co.com/yFLmJftQ/EY-Gachibowli.png",
-        "description": "Tips and strategies for preparing your child for preschool and early learning.",
-        "content": {
-          "introduction": "The preschool years are a crucial time for early education...",
-          "sections": [
-            { "heading": "Cognitive Development", "body": "Encourage problem-solving skills and creativity..." },
-            { "heading": "Social & Emotional Skills", "body": "Teaching kids about emotions and friendships..." },
-            { "heading": "Choosing the Right Preschool", "body": "Factors to consider: curriculum, teachers..." }
-          ],
-          "tips": [ "Read daily with your child...", "Encourage independent play...", "Expose them to music and art..." ],
-          "faqs": [
-            { "question": "What age should my child start preschool?", "answer": "Usually around 3-4 years old..." },
-            { "question": "How do I prepare my child for school?", "answer": "Start a simple morning routine..." }
-          ]
+      ]
+    }
+  },
+  {
+    "id": "post-003",
+    "title": "Newborn & Baby Care: The First Few Months",
+    "logo": "https://i.ibb.co.com/23BRtjFd/5-Essential-Baby-Care-Products-a-New-Mom-Must-Have-1200x1200-crop-center.jpg",
+    "description": "A comprehensive guide on newborn care, including feeding, sleep routines...",
+    "content": {
+      "introduction": "The first few months with a newborn can be overwhelming...",
+      "sections": [
+        {
+          "heading": "Feeding Your Baby",
+          "body": "Breastfeeding and formula feeding both have benefits..."
+        },
+        {
+          "heading": "Sleep Patterns",
+          "body": "Newborns sleep up to 16 hours a day..."
+        },
+        {
+          "heading": "Health & Vaccinations",
+          "body": "Regular doctor visits and vaccinations..."
         }
-      },
-      {
-        "id": "post-006",
-        "title": "Parenting: Managing the Ups & Downs",
-        "logo": "https://i.ibb.co.com/prkf3Hyh/images-q-tbn-ANd9-Gc-SVm-Vip-UGsas1o-BHex-Ym4m-LMf0-ZDo-S-MVr-PA-s.jpg",
-        "description": "General parenting tips, discipline strategies, and ways to create a happy home.",
-        "content": {
-          "introduction": "Parenting is a rewarding but challenging journey...",
-          "sections": [
-            { "heading": "Building a Strong Bond", "body": "Spending quality time with kids is essential..." },
-            { "heading": "Positive Discipline Strategies", "body": "Using rewards, praise, and firm boundaries..." },
-            { "heading": "Managing Stress as a Parent", "body": "Self-care tips for handling parenting pressure..." }
-          ],
-          "tips": [ "Set clear rules and stick to them...", "Encourage open communication...", "Be a role model..." ],
-          "faqs": [
-            { "question": "How do I deal with sibling rivalry?", "answer": "Encourage teamwork and fairness..." },
-            { "question": "What are some effective discipline techniques?", "answer": "Timeouts, praise, and setting limits..." }
-          ]
+      ],
+      "tips": [
+        "Swaddling can help...",
+        "Try white noise...",
+        "Skin-to-skin contact..."
+      ],
+      "faqs": [
+        {
+          "question": "How often should I feed my newborn?",
+          "answer": "Every 2-3 hours..."
+        },
+        {
+          "question": "When should I introduce solid foods?",
+          "answer": "Around six months..."
         }
-      },
-      {
-        "id": "post-007",
-        "title": "Family Health & Wellness: Keeping Your Loved Ones Safe",
-        "logo": "https://i.ibb.co.com/cXgkMmHK/family-heart.jpg",
-        "description": "A guide to keeping your family healthy, from nutrition to exercise.",
-        "content": {
-          "introduction": "Maintaining a healthy lifestyle benefits the whole family...",
-          "sections": [
-            { "heading": "Healthy Eating Habits", "body": "Incorporating fruits, vegetables, and whole grains..." },
-            { "heading": "Daily Exercise & Play", "body": "Physical activity recommendations for all ages..." },
-            { "heading": "Mental Wellness", "body": "Teaching kids mindfulness and coping strategies..." }
-          ],
-          "tips": [ "Meal prep for busy weekdays...", "Encourage outdoor activities...", "Limit screen time..." ],
-          "faqs": [
-            { "question": "How much screen time is too much?", "answer": "Experts recommend less than 2 hours..." },
-            { "question": "What are good family fitness activities?", "answer": "Walking, biking, and dancing together..." }
-          ]
+      ]
+    }
+  },
+  {
+    "id": "post-004",
+    "title": "Toddler Milestones & Behavior",
+    "logo": "https://i.ibb.co.com/jvvwxh6G/milestones-blog.jpg",
+    "description": "A look into toddler development, discipline strategies, and communication tips.",
+    "content": {
+      "introduction": "The toddler stage is full of rapid learning and growth...",
+      "sections": [
+        {
+          "heading": "Language & Communication",
+          "body": "By age two, toddlers can say 50+ words..."
+        },
+        {
+          "heading": "Discipline & Behavior",
+          "body": "Setting boundaries with positive reinforcement..."
+        },
+        {
+          "heading": "Nutrition & Meal Planning",
+          "body": "Toddlers can be picky eaters..."
         }
-      }
-    ]
+      ],
+      "tips": [
+        "Encourage learning through play...",
+        "Be patient with tantrums...",
+        "Establish consistent routines..."
+      ],
+      "faqs": [
+        {
+          "question": "How can I handle toddler tantrums?",
+          "answer": "Stay calm, acknowledge their feelings..."
+        },
+        {
+          "question": "How much sleep does a toddler need?",
+          "answer": "11-14 hours per day..."
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-005",
+    "title": "Preschool & Early Learning: Setting the Foundation",
+    "logo": "https://i.ibb.co.com/yFLmJftQ/EY-Gachibowli.png",
+    "description": "Tips and strategies for preparing your child for preschool and early learning.",
+    "content": {
+      "introduction": "The preschool years are a crucial time for early education...",
+      "sections": [
+        {
+          "heading": "Cognitive Development",
+          "body": "Encourage problem-solving skills and creativity..."
+        },
+        {
+          "heading": "Social & Emotional Skills",
+          "body": "Teaching kids about emotions and friendships..."
+        },
+        {
+          "heading": "Choosing the Right Preschool",
+          "body": "Factors to consider: curriculum, teachers..."
+        }
+      ],
+      "tips": [
+        "Read daily with your child...",
+        "Encourage independent play...",
+        "Expose them to music and art..."
+      ],
+      "faqs": [
+        {
+          "question": "What age should my child start preschool?",
+          "answer": "Usually around 3-4 years old..."
+        },
+        {
+          "question": "How do I prepare my child for school?",
+          "answer": "Start a simple morning routine..."
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-006",
+    "title": "Parenting: Managing the Ups & Downs",
+    "logo": "https://i.ibb.co.com/prkf3Hyh/images-q-tbn-ANd9-Gc-SVm-Vip-UGsas1o-BHex-Ym4m-LMf0-ZDo-S-MVr-PA-s.jpg",
+    "description": "General parenting tips, discipline strategies, and ways to create a happy home.",
+    "content": {
+      "introduction": "Parenting is a rewarding but challenging journey...",
+      "sections": [
+        {
+          "heading": "Building a Strong Bond",
+          "body": "Spending quality time with kids is essential..."
+        },
+        {
+          "heading": "Positive Discipline Strategies",
+          "body": "Using rewards, praise, and firm boundaries..."
+        },
+        {
+          "heading": "Managing Stress as a Parent",
+          "body": "Self-care tips for handling parenting pressure..."
+        }
+      ],
+      "tips": [
+        "Set clear rules and stick to them...",
+        "Encourage open communication...",
+        "Be a role model..."
+      ],
+      "faqs": [
+        {
+          "question": "How do I deal with sibling rivalry?",
+          "answer": "Encourage teamwork and fairness..."
+        },
+        {
+          "question": "What are some effective discipline techniques?",
+          "answer": "Timeouts, praise, and setting limits..."
+        }
+      ]
+    }
+  },
+  {
+    "id": "post-007",
+    "title": "Family Health & Wellness: Keeping Your Loved Ones Safe",
+    "logo": "https://i.ibb.co.com/cXgkMmHK/family-heart.jpg",
+    "description": "A guide to keeping your family healthy, from nutrition to exercise.",
+    "content": {
+      "introduction": "Maintaining a healthy lifestyle benefits the whole family...",
+      "sections": [
+        {
+          "heading": "Healthy Eating Habits",
+          "body": "Incorporating fruits, vegetables, and whole grains..."
+        },
+        {
+          "heading": "Daily Exercise & Play",
+          "body": "Physical activity recommendations for all ages..."
+        },
+        {
+          "heading": "Mental Wellness",
+          "body": "Teaching kids mindfulness and coping strategies..."
+        }
+      ],
+      "tips": [
+        "Meal prep for busy weekdays...",
+        "Encourage outdoor activities...",
+        "Limit screen time..."
+      ],
+      "faqs": [
+        {
+          "question": "How much screen time is too much?",
+          "answer": "Experts recommend less than 2 hours..."
+        },
+        {
+          "question": "What are good family fitness activities?",
+          "answer": "Walking, biking, and dancing together..."
+        }
+      ]
+    }
   }
-  
+]

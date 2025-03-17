@@ -4,6 +4,7 @@ const JourneySection = () => {
   return (
     <div>
         <SectionHeader title="Your Journey Starts Here"/>
+        
     </div>
   )
 }
