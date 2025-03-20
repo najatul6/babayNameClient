@@ -16,7 +16,7 @@ const JourneySection = () => {
         <SectionHeader title="Your Journey Starts Here"/>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4">
           {journeyCards.map((card) => (
-            <Link to={`journey/${card?.id}`} key={card?.id}>
+            <Link to={`journey/${card?._id}`} key={card?.id}>
             <JourneyCards
               banner={card?.logo}
               title={card?.title}
