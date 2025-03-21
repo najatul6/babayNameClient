@@ -62,10 +62,9 @@ const Header = () => {
               <div key={index} className="relative group">
                 <NavLink
                   className={({ isActive }) =>
-                    `flex items-center gap-1 transition duration-200 ${
-                      isActive
-                        ? "text-baseColor border-b-2 border-baseColor font-semibold"
-                        : "hover:text-baseColor"
+                    `flex items-center gap-1 transition duration-200 ${isActive
+                      ? "text-baseColor border-b-2 border-baseColor font-semibold"
+                      : "hover:text-baseColor"
                     }`
                   }
                   to={item.path}
@@ -78,10 +77,9 @@ const Header = () => {
                       <NavLink
                         to={sub.path}
                         className={({ isActive }) =>
-                          `block px-4 py-2 transition duration-200 ${
-                            isActive
-                              ? "bg-baseColor text-white font-semibold"
-                              : "hover:bg-gray-100"
+                          `block px-4 py-2 transition duration-200 ${isActive
+                            ? "bg-baseColor text-white font-semibold"
+                            : "hover:bg-gray-100"
                           }`
                         }
                       >
@@ -96,10 +94,9 @@ const Header = () => {
                 key={index}
                 to={item.path}
                 className={({ isActive }) =>
-                  `transition duration-200 ${
-                    isActive
-                      ? "text-baseColor font-semibold"
-                      : "hover:text-baseColor"
+                  `transition duration-200 ${isActive
+                    ? "text-baseColor font-semibold"
+                    : "hover:text-baseColor"
                   }`
                 }
               >
@@ -199,17 +196,17 @@ const Header = () => {
                   <DropdownMenuLabel>My Account</DropdownMenuLabel>
                   <DropdownMenuSeparator />
                   {dbUser?.role === "admin" && (
-                  <DropdownMenuGroup>
-                    <Link to="/dashboard/overview">
-                      <DropdownMenuItem className="cursor-pointer">
-                        Dashboard{" "}
-                        <DropdownMenuShortcut>
-                          <LayoutDashboard />
-                        </DropdownMenuShortcut>
-                      </DropdownMenuItem>
-                    </Link>
-                  </DropdownMenuGroup>
-                )}
+                    <DropdownMenuGroup>
+                      <Link to="/dashboard/overview">
+                        <DropdownMenuItem className="cursor-pointer">
+                          Dashboard{" "}
+                          <DropdownMenuShortcut>
+                            <LayoutDashboard />
+                          </DropdownMenuShortcut>
+                        </DropdownMenuItem>
+                      </Link>
+                    </DropdownMenuGroup>
+                  )}
                   <DropdownMenuGroup>
                     <Link to="my-profile">
                       <DropdownMenuItem className="cursor-pointer">
@@ -252,13 +249,12 @@ const Header = () => {
             )}
 
             <ul
-              className={`capitalize w-full py-5 flex animate__animated flex-col lg:hidden gap-5 absolute z-50 bg-white/40 backdrop-blur-md  min-h-screen top-20  left-0 ${
-                isMenuOpen
-                  ? "animate__fadeInLeft "
-                  : isPageLoad
+              className={`capitalize w-full py-5 flex animate__animated flex-col lg:hidden gap-5 absolute z-50 bg-white/40 backdrop-blur-md  min-h-screen top-20  left-0 ${isMenuOpen
+                ? "animate__fadeInLeft "
+                : isPageLoad
                   ? "animate__fadeOutRight flex "
                   : "hidden"
-              } `}
+                } `}
             >
               {menu.map((item, index) => (
                 <div key={index}>
@@ -270,25 +266,22 @@ const Header = () => {
                       >
                         {item.name}
                         <ChevronDown
-                          className={`w-4 h-4 transition ${
-                            submenuOpen[index] ? "rotate-180" : ""
-                          }`}
+                          className={`w-4 h-4 transition ${submenuOpen[index] ? "rotate-180" : ""
+                            }`}
                         />
                       </button>
                       <ul
-                        className={`animate__animated  pl-4 transition ${
-                          submenuOpen[index] ? "block" : "hidden"
-                        }`}
+                        className={`animate__animated  pl-4 transition ${submenuOpen[index] ? "block" : "hidden"
+                          }`}
                       >
                         {item.submenu.map((sub, subIndex) => (
                           <li key={subIndex}>
                             <NavLink
                               to={sub.path}
                               className={({ isActive }) =>
-                                `block px-4 py-2 transition duration-200 ${
-                                  isActive
-                                    ? "bg-gray-200 text-baseColor font-semibold"
-                                    : "hover:bg-gray-100"
+                                `block px-4 py-2 transition duration-200 ${isActive
+                                  ? "bg-gray-200 text-baseColor font-semibold"
+                                  : "hover:bg-gray-100"
                                 }`
                               }
                             >
@@ -302,10 +295,9 @@ const Header = () => {
                     <NavLink
                       onClick={() => setIsMenuOpen(false)}
                       className={({ isActive }) =>
-                        `block px-4 py-2 transition duration-200 ${
-                          isActive
-                            ? "bg-gray-200 text-baseColor font-semibold"
-                            : "hover:bg-gray-100"
+                        `block px-4 py-2 transition duration-200 ${isActive
+                          ? "bg-gray-200 text-baseColor font-semibold"
+                          : "hover:bg-gray-100"
                         }`
                       }
                       to={item.path}
